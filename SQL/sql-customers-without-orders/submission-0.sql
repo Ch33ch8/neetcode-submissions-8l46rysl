@@ -1,0 +1,4 @@
+-- Write your query below
+SELECT c.name from customers c
+LEFT JOIN orders o ON  c.id = o.customer_id
+WHERE customer_id IS NULL
